@@ -36,11 +36,11 @@ html {
 .header--navbar-container {
     width: 100%;
     min-width: 320px;
-    /* height: 334px; */
 }
-.header--navbar-container {
+header{
     border-bottom:3px solid;
     border-color: var(--rastreo-red);
+    margin-bottom: 40px;
 }
 .menu-button {
     cursor: pointer;
@@ -72,8 +72,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 9px ;
-    margin-bottom: 8px;
+    margin: 9px;
 } 
 .button--login {
     border-color: var(--rastreo-red);
@@ -263,7 +262,7 @@ text-align: center; */
     color: white;
     font-weight: 600;
 }
-.rastreo-img-content h1{
+.rastreo-img-content h1 {
     font-size: 14px;
     font-weight: 600;
 }
@@ -307,12 +306,12 @@ text-align: center; */
 }
 footer {
     width: 100%;
-    height: 400px;
     background-color: var(--soft-grey);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 4em 0;
 }
 .top {
     margin-bottom: 3em;
@@ -346,21 +345,22 @@ footer {
     margin: 2em 0;
 }
 .main-card-content{
-    margin-bottom: 2em; 
+    margin-bottom: 4em; 
     background-color: var(--just-white);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 9px;
+    padding: 30px 20px 40px 20px;
     width: auto;
     max-width: 500px;
     height: auto;
-    border-radius: 21px;
+    border-radius: 5px;
     box-shadow: var(--shadow-box);
 }
 .main-card-content h2{
     color: var(--secundary-red);
+    line-height: 2em;
 }
 .main-card-content p{
     text-align: justify;
