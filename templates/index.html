@@ -1,0 +1,146 @@
+{% extends 'base.html'%}
+
+{% block title %} 
+    {{super()}}
+    Bienvenido 
+{% endblock%}
+
+{% block content %}
+    <main>
+        <section class="main-hero">
+            <div class="hero--container">
+                <div class="hero--box--container">
+                    <img src="{{ url_for('static', filename='assets/icons/map.svg') }}" alt="">
+                    <h2 class="hero--box--title">Comienza a rastrear tu auto desde hoy</h2>
+                    <p>Más rápido y fácil que nunca</p>
+                </div>
+                <!-- <img class="hero-image" src="./assets/imgs/slide-mobile.jpg"> -->
+            </div>
+        </section>
+        <section class="main-freatures">
+            <div class="freatures--container">
+                <div class="freatures--box--circle">
+                    <img src="{{ url_for('static', filename='assets/icons/securuty.svg') }}" alt="">
+                </div>
+                <p>Seguro</p>
+            </div>
+            <div class="freatures--container">
+                <div class="freatures--box--circle">
+                    <img src="{{ url_for('static', filename='assets/icons/guaranteed.svg') }}" alt="">
+                </div>
+                <p>Garantizado</p>
+            </div>
+            <div class="freatures--container">
+                <div class="freatures--box--circle">
+                    <img src="{{ url_for('static', filename='assets/icons/trusttworthy.svg') }}" alt="">
+                </div>
+                <p>Confiable</p>
+            </div>
+
+        </section>
+        <section class="main-prototype-detail-container">
+            <div class="main-prototype-detail">
+                <p class="product--prototype_title">
+                    Encuentra tu vehículo en todo momento, donde vayas,
+                    a cualquier hora y en cualquier lugar
+                </p>
+                <div class="product-prototype_content">
+                    <img 
+                        class="product-prototype_app"
+                        src="{{ url_for('static', filename='assets/imgs/prototype.png') }}" 
+                        alt="">
+                    <div class="product--prototype-element">
+                        <img 
+                            class="product-prototype_map" 
+                            src="{{ url_for('static', filename='assets/imgs/prototype-map.png') }}" 
+                            alt="">
+                        <p class="product--prototype_body">Mantente siempre seguro</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-detail container">
+            <h2 class="detail-content--title">Encontrarás:</h2>
+            <div class="main-detail-content">
+                <div class="main-detail-container">
+                    <div class="detail-icon">
+                        <img 
+                            src="{{ url_for('static', filename='assets/icons/coverage.svg') }}"
+                            alt="">  
+                    </div>
+                    <div class="detail--box--content">
+                        <h3 class="detail-content--subtitle">Cobertura</h3>
+                        <p>Contamos con covertura
+                        a nivel nacional</p>                        
+                    </div>
+                </div>
+                <div class="main-detail-container">
+                    <div class="detail-icon">
+                        <img 
+                            src="{{ url_for('static', filename='assets/icons/support.svg') }}"
+                            alt="">  
+                    </div>
+                    <div class="detail--box--content">
+                        <h3 class="detail-content--subtitle">Soporte</h3>
+                        <p>Brindamos soporte y
+                            asistencia en cualquier lugar
+                            en el que se encuentre
+                        </p>                        
+                    </div>
+                </div>
+                <div class="main-detail-container">
+                    <div class="detail-icon">
+                        <img 
+                            src="{{ url_for('static', filename='assets/icons/privacy.svg') }}"
+                            alt="">  
+                    </div>
+                    <div class="detail--box--content">
+                        <h3 class="detail-content--subtitle">Privacidad</h3>
+                        <p>Todos sus datos se
+                            mantendran a salvo en
+                            nuestro sistema
+                        </p>                        
+                    </div>
+                </div>
+                <div class="main-detail-container">
+                    <div class="detail-icon">
+                        <img 
+                            src="{{ url_for('static', filename='assets/icons/gps.svg') }}"
+                            alt="">  
+                    </div>
+                    <div class="detail--box--content">
+                        <h3 class="detail-content--subtitle">GPS</h3>
+                        <p>Encuentra las mejores rutas
+                            para llegar a tu destino
+                        </p>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rastreo-img-container">
+            <div class="rastreo-img-content">
+                <h1>monitorea, rastrea y localiza
+                    tu vehículo en tiempo real</h1>
+                <div class="rastreo-logo">
+                    <img
+                        src="{{ url_for('static', filename='assets/imgs/logo-white.svg') }}"
+                        alt="">
+                    <!-- <p>Te lo rastreo</p> -->
+                </div>
+                <p class="rastreo-inf">servicio de rastreo satelital</p>
+            </div>
+        </section>
+        <section class="desing-img-container">
+            <div class="desing-img-content">
+                <div class="desing-content-img">
+                    <img 
+                        class="desing-img" 
+                        src="{{ url_for('static', filename='assets/imgs/prototypex3.png') }}"
+                        alt=""> 
+                <p>Gestiona tus recorridos</p>
+                <p>Recibe notificaciones en tus dispositivos</p>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}

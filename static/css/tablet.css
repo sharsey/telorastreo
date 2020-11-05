@@ -1,0 +1,83 @@
+html { 
+    font-size: 100%;
+}
+.header--navegation {
+    padding: 0;
+    margin: 9px;
+} 
+.header--navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 3px 2px 23px;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.header-icons--mobile {
+    padding: 0;
+}
+
+.menu-button {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.header--navegation {
+    border: none;
+}
+
+.main-hero {
+    margin: auto;
+    max-width: 1000px;
+}
+
+.freatures--container {
+    margin: 5em 1.5em;
+}
+
+.product-prototype_app {
+    height: auto;
+    width: auto;
+}
+
+.product-prototype_map {
+    height: auto;
+    width: auto;
+}
+
+.product--prototype_title {
+    font-size: 18px;
+}
+
+.product--prototype_body {
+    font-size: 18px;
+}
+
+.rastreo-img-content h1 {
+    font-size: 20px;
+}
+
+.rastreo-inf {
+    font-size: 18px;
+}
+
+.desing-content-img{
+    font-size: 18px;
+}
+
+.desing-img-container{
+    margin: 6em 0;
+}
+
+.desing-img { 
+    width: 500px;
+}
+
+footer{
+    padding: 6em 0;
+}

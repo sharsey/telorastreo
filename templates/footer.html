@@ -1,0 +1,23 @@
+<footer>
+    <section class="top">
+        <ul>
+            <li>
+                <a href="{{ url_for('information') }}">Información</a>
+            </li>
+            <li>
+                <a href="{{ url_for('contact') }}">Contacto</a>
+            </li>
+            <li>
+                <a href="{{ url_for('index') }}">Login</a>
+            </li>
+        </ul>
+    </section>
+    <section class="bottom">
+        <img src="{{ url_for('static', filename='assets/imgs/logo-footer.svg') }}" alt="">
+        <span class="text-footer">te lo rastreo</span>
+    </section>
+    <span>
+        Development by 
+        <a class="text-footer" href="https://github.com/sharsey" target="_blank">@Sharsey</a>
+    </span>
+</footer>

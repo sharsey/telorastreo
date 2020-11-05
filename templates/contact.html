@@ -1,0 +1,50 @@
+{% extends 'base.html'%}
+
+{% block title %} 
+    {{super()}}
+    Contacto 
+{% endblock%}
+
+{% block content %}
+
+    <main>
+        <section class="main-card-container">
+            <div class="main-card-content-contact">
+                <h2>Contáctanos:</h2>
+                <div class="main-contact-container">
+                    <div class="detail-icon">
+                        <img 
+                            src="{{ url_for('static', filename='assets/icons/call-contact.svg') }}"
+                            alt="">  
+                    </div>
+                    <div class="detail--box--content">
+                        <h3 class="detail-content--subtitle">Llámanos</h3>
+                        <p>+593 996726158</p>                        
+                    </div>
+                </div>
+                <div class="main-contact-container">
+                    <div class="detail-icon">
+                        <img 
+                            src="{{ url_for('static', filename='assets/icons/email-contact.svg') }}"
+                            alt="">  
+                    </div>
+                    <div class="detail--box--content">
+                        <h3 class="detail-content--subtitle">Email</h3>
+                        <p>info@telorastreo.com</p>                        
+                    </div>
+                </div>
+                <div class="main-contact-container">
+                    <div class="detail-icon">
+                        <img 
+                            src="{{ url_for('static', filename='assets/icons/email-contact.svg') }}"
+                            alt="">  
+                    </div>
+                    <div class="detail--box--content">
+                        <h3 class="detail-content--subtitle">Ubicación</h3>
+                        <p>Ambato - Ecuador</p>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+{% endblock %}
