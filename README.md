@@ -1,5 +1,5 @@
 # Te lo Rastreo
-El documento se base en el maquetado de la pagina ***te lo rastreo*** en Flask a partir de tecnologías como python, html5, css y javascript.
+El documento se base en el maquetado de la pagina ***te lo rastreo*** a partir de tecnologías como html5, css y javascript.
 
 
 ## Cómo instalar el repositorio
