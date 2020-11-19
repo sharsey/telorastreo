@@ -1,0 +1,16 @@
+{% extends 'error.html'%}
+
+{% block title %} 
+    {{super()}}
+    Server error
+{% endblock%}
+
+{% block content %}
+    <section class="container--error">
+        <div class="container--error-content">
+            <img src="{{ url_for('static', filename='assets/imgs/logo-white.svg') }}" alt="">
+            <h1 class="error--title">Lo sentimos ocurrio un error</h1>
+            <p class="error-text">Por favor intenta en otro momento</p>
+        </div>
+    </section>
+{% endblock%}
