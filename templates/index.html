@@ -1,5 +1,16 @@
 {% extends 'base.html'%}
 
+{% block meta %}
+    <meta property="og:url"                content="www.telorastreo.com" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="Te lo Rastreo - Rastreo Satelital GPS" />
+    <meta property="og:description"        content="Controla, administra y monitorea tu vehículo. Protege tu auto para prevenir robos y pérdidas de alto rango, con un simple click tendrás toda la información de tu carro, incrementando la seguridad en tan solo unos segundos con el mejor rastreador satelital del Ecuador ." />
+    <meta property="og:image"              content="https://telorastreo.com/static/assets/imgs/prototypex3.png" />
+
+    <meta property="og:url" content="www.telorastreo.com" />
+    <meta property="og:title" content="Sistema de Rastro Vehicular" />
+{% end block %}
+
 {% block title %} 
     {{super()}}
     Bienvenido 
@@ -134,6 +145,7 @@
             <div class="desing-img-content">
                 <div class="desing-content-img">
                     <img 
+                        itemprop="representativeOfPage"
                         class="desing-img" 
                         src="{{ url_for('static', filename='assets/imgs/prototypex3.png') }}"
                         alt="Te lo rastreo aplicacion movil"> 

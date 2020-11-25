@@ -1,5 +1,12 @@
 {% extends 'base.html'%}
 
+{% block meta %}
+    <meta property="og:url"                content="www.telorastreo.com" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="Te lo Rastreo - Contacto" />
+    <meta property="og:description"        content="Encuentra toda la información para comenzar a rastrear tu vehículo desde hoy." />
+{% end block %}
+
 {% block title %} 
     {{super()}}
     Contacto 

@@ -1,5 +1,13 @@
 {% extends 'base.html'%}
 
+{% block meta %}
+    <meta property="og:url"                content="www.telorastreo.com" />
+    <meta property="og:type"               content="article" />
+    <meta property="og:title"              content="Te lo Rastreo - Información" />
+    <meta property="og:description"        content="Conoce más de Te lo Rastreo." />
+{% end block %}
+
+
 {% block title %} 
     {{super()}}
     Información
