@@ -1,13 +1,15 @@
 
+<!DOCTYPE html>
+<html lang="es">
     {% block head %}
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         {% block meta %}
-        {% end block %}
+        {% endblock %}
 
         <title>
-            {% block title %} Te lo rastreo | {% endblock %}
+            {% block title %} Te lo Rastreo | {% endblock %}
         </title>
     
         <link 
@@ -17,32 +19,33 @@
         <link 
             rel="stylesheet" 
             type="text/css"
-            href="{{ url_for('static', filename='css/styles.css')}}">
+            href="https://telorastreo.com/static/css/styles.css">
         <link
             rel="stylesheet"
             type="text/css"
-            href="{{ url_for('static', filename='css/tablet.css')}}"
+            href="https://telorastreo.com/static/css/tablet.css"
             media="(min-width: 768px)"
         />
 
         <link 
             rel="apple-touch-icon" 
             sizes="180x180" 
-            href="{{ url_for('static', filename='assets/imgs/apple-touch-icon.png')}}"
+            href="https://telorastreo.com/static/assets/imgs/apple-touch-icon.png"
         />
         <link 
             rel="icon" 
             type="image/png" 
             sizes="32x32" 
-            href="{{ url_for('static', filename='assets/imgs/favicon-32x32.png')}}"
+            href="https://telorastreo.com/static/assets/imgs/favicon-32x32.png"
         />
         <link 
             rel="icon" 
             type="image/png" 
             sizes="16x16" 
-            href="{{ url_for('static', filename='assets/imgs/favicon-16x16.png')}}"
+            href="https://telorastreo.com/static/assets/imgs/favicon-16x16.png"
         />
-
+        <meta name="description" content="Tecnología de rastreo vehicular que brinda el control para prevenir situaciones
+        de inseguridad, mantente siempre seguro con el mejor rastreo satelital de vehiculos del Ecuador.">
     {% endblock %}
     
     {% block body %}
@@ -57,10 +60,11 @@
         {% block footer %}
             {% include 'footer.html' %}
         {% endblock %}
+        <script> </script>
         
         <script type="text/javascript"  src="{{ url_for('static', filename='js/main.js') }}" ></script>
         
     {% endblock %}
-  
+</html>  
 
 
